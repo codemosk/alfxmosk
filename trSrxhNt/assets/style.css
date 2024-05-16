@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+
+/* Define CSS variables for colors */
+:root {
+    --background-color: #10131A;
+    --text-color: #FFFFFF;
+    --accent-color: #F9B95A;
+    --accent-hover-color: #e0a44b;
+    --input-border-color: #F9B95A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Ensure html and body take up full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#content-container {
+    width: 360px;
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+#main-content-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-container {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-container input {
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 250px;
+    border: solid 2px var(--input-border-color);
+    border-radius: 10px;
+    outline: none;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: border 0.5s;
+    font-size: 18px;
+}
+
+#form-container input:focus {
+    border: solid 2px var(--input-border-color);
+}
+
+#form-container button {
+    width: 254px;
+    padding: 15px;
+    
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    font-size: 18px;
+}
+
+#form-container button:hover, #form-container button:focus {
+    background-color: var(--accent-hover-color);
+    cursor: pointer;
+}
+
+#question-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#question {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+#key {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+#message {
+    color: #ED4337;
+}
